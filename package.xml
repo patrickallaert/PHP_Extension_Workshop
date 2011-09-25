@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package version="2.1" xmlns="http://pear.php.net/dtd/package-2.1" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0     http://pear.php.net/dtd/tasks-1.0.xsd     http://pear.php.net/dtd/package-2.1     http://pear.php.net/dtd/package-2.1.xsd">
+ <name>myext</name>
+ <channel>pecl.php.net</channel>
+ <summary>Extension package myext summary
+</summary>
+ <description>
+Detailed description (edit README to change this)</description>
+ <lead>
+  <name>Your Name</name>
+  <user>handle</user>
+  <email>handle@php.net</email>
+  <active>yes</active>
+ </lead>
+ <date>2011-09-25</date>
+ <time>11:06:25</time>
+ <version>
+  <release>0.1.0</release>
+  <api>0.1.0</api>
+ </version>
+ <stability>
+  <release>alpha</release>
+  <api>alpha</api>
+ </stability>
+ <license uri="http://www.opensource.org/licenses/bsd-license.php">New BSD License</license>
+ <notes>Package myext release notes for version 0.1.0.</notes>
+ <contents>
+  <dir name="/">
+   <dir name="tests">
+    <file role="test" name="001.phpt"/>
+   </dir>
+   <file role="src" name="config.m4"/>
+   <file role="src" name="config.w32"/>
+   <file role="src" name="myext.c"/>
+   <file role="src" name="php_myext.h"/>
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.2.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.8</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <providesextension>myext</providesextension>
+ <extsrcrelease/>
+</package>
