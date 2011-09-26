@@ -12,7 +12,7 @@ zend_module_entry myext_module_entry = {
     STANDARD_MODULE_HEADER,
     "myext",
     NULL, /* Function entries */
-    NULL, /* Module init */
+    PHP_MINIT(myext), /* Module init */
     NULL, /* Module shutdown */
     NULL, /* Request init */
     NULL, /* Request shutdown */
@@ -25,3 +25,9 @@ zend_module_entry myext_module_entry = {
 #ifdef COMPILE_DL_MYEXT
 ZEND_GET_MODULE(myext)
 #endif
+
+PHP_MINIT_FUNCTION(myext)
+{
+    REGISTER_DOUBLE_CONSTANT("MYEXT_PI", 3.14159265358979, CONST_CS | CONST_PERSISTENT);
+    return SUCCESS;
+}
