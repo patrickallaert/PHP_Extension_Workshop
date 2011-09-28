@@ -1,0 +1,1 @@
+PHP_MINIT_FUNCTION(myext);
