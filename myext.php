@@ -1,4 +1,5 @@
 <?php
 
 $object = new MyClass;
-var_dump( $object );
+$string = "Is this a real answer?";
+$object->foo(42, $string);

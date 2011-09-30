@@ -1,1 +1,2 @@
 PHP_MINIT_FUNCTION(myext);
+PHP_METHOD(MyClass, foo);
