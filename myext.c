@@ -36,5 +36,8 @@ PHP_MINIT_FUNCTION(myext)
     ce.create_object = NULL;
     ce_MyClass = zend_register_internal_class(&ce TSRMLS_CC);
 
+    /* Constants declaration */
+    zend_declare_class_constant_long(ce_MyClass, ZEND_STRL("ULTIMATE_ANSWER"), 42 TSRMLS_CC);
+
     return SUCCESS;
 }
