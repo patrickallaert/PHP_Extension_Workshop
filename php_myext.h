@@ -1,0 +1,1 @@
+PHP_MINFO_FUNCTION(myext);
